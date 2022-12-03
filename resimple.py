@@ -8,9 +8,6 @@ import pyaudio
 # Filepath Example - C:\Users\You\Desktop\resimple\samples
 
 
-# C:\Users\Tim\Desktop\Music\Samples
-
-
 class ReSimple:
     def __init__(self):
         self.filepath = input(
