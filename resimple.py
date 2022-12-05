@@ -25,11 +25,11 @@ class ReSimple:
         contents.insert(0, "Contents:")  # Really just for formatting purposes.
         if (
             total > 10
-        ):  # Some contents may exceed hundreds, if there are less than 10 we'll go ahead and display them.
+        ):  # Some contents may exceed hundreds, if there are less than 10 we'll go ahead and display them...
             choice = input(
                 f"{total} contents found:\n\t1. Preview Contents\n\t2. View All Contents\n"
             )
-            if choice == "1":
+            if choice == "1":  # otherwise we'll display a limited preview.
                 limit = 10
                 preview = len(contents)
                 for i in range(0, preview - limit):
